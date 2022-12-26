@@ -2,16 +2,13 @@
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-resources:
-  pipelines:
-  - pipeline: Lab9
-    source: MyPool
 
 trigger:
 - main
 
 pool:
-  vmImage: 'MyPool'
+  name: MyPool
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
