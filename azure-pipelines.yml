@@ -5,7 +5,7 @@
 resources:
   pipelines:
   - pipeline: MyPool
-    source: 
+    source: MyPool
 
 trigger:
 - main
